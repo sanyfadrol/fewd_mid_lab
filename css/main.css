@@ -17,3 +17,338 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
+.rover-header-container{
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rover-header-left .rover-header-image{
+  width: 150px;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.rover-header-left, .rover-header-right{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.rover-header-left .rover-header-link{
+  padding: 10px;
+  color: grey;
+}
+
+.rover-header-right{
+  padding-left: 350px;
+}
+
+.rover-header-right .rover-header-link{
+  padding: 10px;
+  color: grey;
+}
+
+/*mobile*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rover-header-container a{
+      display: none;
+      }
+}
+
+/* dekstopo*/
+@media screen 
+  and (min-device-width: 980px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .rover-header-right-mobile{
+      display: none;
+    }
+}
+
+.rover-hero-container{
+  display: flex;
+  background-image: url(../img/hero.jpg);
+  flex-direction: column;
+  background-position: top;
+  background-size: cover;
+  height: 600px;
+  text-align: justify;
+  padding-top: 150px;
+}
+
+.rover-hero-content{
+  display: flex ;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.rover-hero-title{
+  
+  color: grey;
+  position: relative;
+  text-align: justify;
+  margin-top: 0px;
+  margin-left:100px;
+}
+
+p {
+    color: grey;
+    margin-left: 100px;
+    text-align: justify;
+}
+
+
+.rover-cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+  background-color: rgb(3 130 71);
+  width: 15em;
+  padding:8px;
+  margin-left: 100px;
+}
+
+.rover-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+  background-color: rgb(3 130 71);
+  width: 15em;
+  padding:8px;
+  margin-left: 100px;
+
+}
+
+/*desktop*/
+@media only screen and (max-width:800px) {
+  .rover-cta{
+  display: none;
+  }
+}
+
+  /*mobile*/
+@media only screen and (min-width:1024px) {
+  .rover-cta-mobile{
+  display: none;
+  }
+}
+
+.rover-middle-section .text_center{
+  text-align: center;
+}
+
+.rover-two-boxes-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+/*mobile*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rover-two-boxes-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+
+    .rover-mobile-hero-container{
+      display: flex;
+      justify-content: center;
+    }
+
+    .rover-mobile-hero{
+      width: 150px;
+      padding: 5px;
+    }
+}
+
+/*dekstop*/
+@media screen 
+  and (min-device-width: 980px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .rover-mobile-hero-container{
+      display: none;
+    }
+    
+}
+
+.rover-fact-indiv {
+  display: flex;
+  align-items: center;
+}
+
+.rover-fact-indiv img {
+  width: 60px;
+  margin-right: 18px;
+}
+
+.rover-fact-indiv p {
+  flex-direction: column;
+}
+
+.rover-cta-box{
+  padding: 0;
+}
+
+.rover-cta-container{
+  border: 1px solid #cfd7de;
+}
+
+.rover-cta-bottom-container{
+  padding: 20px;
+}
+
+.rover-cta-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: lightgray;
+  border-bottom: 1px solid #cfd7de;
+}
+
+.rover-cta-header img{
+  height: 50px;
+  width: 50px;
+  padding-right: 20px;
+}
+
+.rover-cta{
+  height: 50px;
+  width: 200px;
+  border: green 1px solid;
+  background-color: #14a96d;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.rover-action-shot{
+  background-image: url(../img/lady-with-her-dogs.jpg);
+  background-size: cover; 
+  height: 500px;
+  object-fit: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.rover-action-shot{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  padding-left: 13%;
+}
+
+/*mobile*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rover-action-shot{
+      background-image: url(../img/lady-with-her-dogs.jpg);
+      background-size: cover; 
+      width: 200px;
+      height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      
+    }
+
+    .rover-action-shot{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      padding-left: 13%;
+    }
+
+    .rover-action-quote-container{
+      width: 300px;
+      height: 200px;
+      padding: 5px;
+     
+      
+    }
+}
+
+.rover-action-quote-container{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  padding: 5px;
+}
+
+.rover-action-quote-container a{
+  text-decoration: none;
+}
+
+.rover-quote{
+  font-family: 'Montserrat', sans-serif;
+  font-size: larger;
+}
+
+.rover-123-container .rover-123-container-title{
+  text-align: center;
+}
+
+.rover-123-item-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rover-123-item {
+ width: 400px;
+}
+
+.rover-123-item img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/*mobile*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rover-123-item-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
